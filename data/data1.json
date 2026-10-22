@@ -1,0 +1,274 @@
+{
+  "institution_profile": {
+    "official_name": "SRM Institute of Science and Technology",
+    "former_name": "SRM University",
+    "established": 1985,
+    "founder": "Dr. T.R. Paarivendhar",
+    "primary_campus_location": "Kattankulathur (KTR), Chennai, Tamil Nadu, India",
+    "type": "Deemed to be University",
+    "accreditation": {
+      "naac_grade": "A++",
+      "ugc_status": "Category-I Autonomy",
+      "mhrd_category": "Category A"
+    },
+    "core_philosophy": "Inter-Disciplinary Experiential Active Learning (IDEAL)"
+  },
+  "administrative_power_structure": {
+    "executive_leadership": [
+      {
+        "role": "The Chancellor",
+        "authority_level": "Apex / Founder",
+        "domain": "Macro-direction of the university, institutional vision, multi-million rupee infrastructure funding, and broad political alliances."
+      },
+      {
+        "role": "The Pro-Chancellor (Academic)",
+        "authority_level": "Strategic",
+        "domain": "International relations, global curriculum overhauls, Semester Abroad Program (SAP) alliances, and foreign university MoUs."
+      },
+      {
+        "role": "The Vice-Chancellor (VC)",
+        "authority_level": "Executive Operations",
+        "domain": "Daily institutional operations, regulatory audits (NIRF, NAAC), high-stakes crises, and approval of specialized B.Tech branches."
+      },
+      {
+        "role": "The Registrar",
+        "authority_level": "Administrative Gatekeeper",
+        "domain": "Absolute control over structural data, degree issuance, official university-stamped documents, and international credit transfer paperwork."
+      }
+    ],
+    "engineering_department_hierarchy": {
+      "structural_layers": [
+        {
+          "role": "Director of Engineering & Technology",
+          "function": "Holds structural dominance over all engineering streams, sets academic baselines, mandates examination schedules, and controls lab budgets."
+        },
+        {
+          "role": "Head of Department (HoD)",
+          "function": "Controls independent sub-domains (e.g., Core CSE, AI/ML, Data Science). Holds veto power over internal marks, project approvals, and disciplinary actions."
+        },
+        {
+          "role": "Faculty Advisor (FA)",
+          "function": "Grassroots supervisor assigned to a specific batch of 60-70 students. Monitors attendance rigidly, issues hall tickets, and acts as the primary academic counselor."
+        }
+      ]
+    }
+  },
+  "physical_campus_blueprint_ktr": {
+    "total_area_acres": 250,
+    "academic_zones": [
+      {
+        "zone_name": "The Tech Park (TP)",
+        "architecture": "15-story modern glass-fronted structure",
+        "departments_housed": ["Computer Science and Engineering (CSE)", "Information Technology (IT)"],
+        "ecosystem": "High-density center for advanced computing, software engineering, overnight hackathons, and corporate coding evaluation rounds."
+      },
+      {
+        "zone_name": "The University Building (UB)",
+        "architecture": "Massive foundational concrete legacy block",
+        "departments_housed": ["Basic Sciences (First Year)", "Core Administrative Offices"],
+        "ecosystem": "Initial transition zone for incoming freshmen, housing massive lecture halls, fundamental physics/chemistry labs, and the central administrative offices."
+      },
+      {
+        "zone_name": "G.D. Naidu Block & Biomedical Block",
+        "architecture": "Multi-story technical facilities",
+        "departments_housed": ["Mechanical Engineering", "Civil Engineering", "Biomedical Engineering", "Genetic Engineering"],
+        "ecosystem": "Houses heavy physical testing machinery, wind tunnels, bio-safety labs, and automotive manufacturing workshops."
+      }
+    ],
+    "social_and_networking_commons": [
+      {
+        "location": "Java Green",
+        "function": "Central open-air food court and social courtyard acting as the primary hub for campus networking, student club campaigning, and grassroots event mobilization."
+      },
+      {
+        "location": "The Central Library",
+        "function": "Massive multi-story repository of resource materials, digital research bays, and silent study zones. Transforms into a high-pressure environment during End Semester Examinations."
+      }
+    ],
+    "residential_infrastructure_hostels": {
+      "mens_hostels": [
+        {
+          "block_name": "Paari Block",
+          "floors": "G+9",
+          "configuration": "Non-AC, 4 & 5 sharing, common washrooms",
+          "cultural_reference": "Named after Vel Paari from the Sangam era."
+        },
+        {
+          "block_name": "Kaari Block",
+          "floors": "G+9",
+          "configuration": "Non-AC, 4 & 5 sharing, common washrooms",
+          "cultural_reference": "Named after Malaiyaman Thirumudi Kaari."
+        },
+        {
+          "block_name": "Oori Block",
+          "floors": "G+9",
+          "configuration": "AC & Non-AC, 2 to 4 sharing, attached washrooms"
+        },
+        {
+          "block_name": "Nelson Mandela Block",
+          "floors": "G+9",
+          "configuration": "AC, 3 sharing, attached washrooms"
+        },
+        {
+          "block_name": "Sannasi A Block",
+          "floors": "G+5",
+          "configuration": "AC/Non-AC, 3 sharing, attached washrooms"
+        },
+        {
+          "block_name": "N Block",
+          "floors": "G+19",
+          "configuration": "Premium AC, 2 & 3 sharing, attached washrooms"
+        }
+      ],
+      "womens_hostels": [
+        {
+          "block_name": "Kopperundevi (M-Block)",
+          "floors": "G+15",
+          "configuration": "Fully furnished, high-security tower",
+          "former_name": "Sister Nivedita Block"
+        },
+        {
+          "block_name": "Kalpana Chawla Block",
+          "floors": "G+5",
+          "configuration": "AC rooms, 4 sharing (bunker and non-bunker), attached washrooms"
+        },
+        {
+          "block_name": "Malligai Block",
+          "floors": "G+6",
+          "configuration": "Non-AC, 2 sharing, common washrooms"
+        },
+        {
+          "block_name": "Thamarai Block",
+          "floors": "G+6",
+          "configuration": "Non-AC, 2 sharing, common washrooms"
+        },
+        {
+          "block_name": "Meenakshi Block",
+          "floors": "G+4",
+          "configuration": "AC 4-sharing (bunker cots) & Non-AC 3-sharing"
+        }
+      ]
+    }
+  },
+  "academic_and_grading_matrix": {
+    "framework": {
+      "system_type": "Choice Based Credit System (CBCS)",
+      "total_credits_required": "160 to 170 credits over 8 semesters (4 years)",
+      "curriculum_flexibility": ["Major", "Major with Specialization", "Major with Minor"]
+    },
+    "course_weight_examples": {
+      "core_theoretical_engineering": {
+        "examples": ["Calculus and Solid Geometry", "Data Structures", "Thermodynamics", "Fourier Series"],
+        "credit_weight": "3 to 4 credits"
+      },
+      "laboratory_and_practical": {
+        "examples": ["Programming Laboratory", "Manufacturing Process Laboratory", "Active Learning Laboratory"],
+        "credit_weight": "1 to 2 credits"
+      },
+      "mandatory_value_additions": {
+        "examples": ["Value Education", "Soft Skills", "YOGA", "National Cadet Corps (NCC)", "National Service Scheme (NSS)"],
+        "credit_weight": "1 credit"
+      }
+    },
+    "evaluation_equation": {
+      "formula": "Total Grade = Internal (50%) + External (50%)",
+      "internal_components": [
+        "Cycle Test 1 (CT-1)",
+        "Cycle Test 2 (CT-2)",
+        "Surprise Quizzes",
+        "Laboratory Lab-View Assessments",
+        "Assignment Portfolios"
+      ],
+      "external_components": [
+        "End Semester Examination (ESE) - A highly formal, 3-hour written assessment covering the entire syllabus."
+      ]
+    },
+    "attendance_barrier": {
+      "minimum_threshold": "75% per subject",
+      "consequence_of_failure": "Automatic 'Detention'. The student is structurally locked out of the ESE for that specific course and must clear it via costly summer terms or contact classes."
+    }
+  },
+  "admissions_and_intake_mechanics": {
+    "primary_entrance_exam": "SRMJEEE (SRM Joint Engineering Entrance Examination)",
+    "exam_structure": "Computer-based test covering Physics, Chemistry, Mathematics/Biology, English, and Aptitude.",
+    "counseling_process": "Centralized online e-counseling based on the national SRMJEEE rank list to lock in campus and specialization.",
+    "eligibility_baseline": "Minimum 60% aggregate in 10+2 with Physics and Mathematics as compulsory subjects (for core engineering)."
+  },
+  "corporate_placement_engine": {
+    "operational_model": "A high-volume corporate filtering machine driven by the Career Development Center.",
+    "selection_tiers": [
+      {
+        "tier_name": "Super Dream Tier",
+        "compensation_inr": "₹15,00,000 to ₹45,00,000+",
+        "key_recruiters": ["Microsoft", "Amazon", "Google", "Adobe", "PayPal"],
+        "evaluation_focus": "Advanced Data Structures & Algorithms (DSA), System Design, Scalability, and Optimization."
+      },
+      {
+        "tier_name": "Dream Tier",
+        "compensation_inr": "₹7,00,000 to ₹14,99,000",
+        "key_recruiters": ["Cisco", "Siemens", "Deloitte", "Optum", "Barclays"],
+        "evaluation_focus": "Object-Oriented Programming (OOPs), Enterprise Application Architecture, Database Design."
+      },
+      {
+        "tier_name": "Mass Placement Tier",
+        "compensation_inr": "₹3,50,000 to ₹6,50,000",
+        "key_recruiters": ["TCS Ninja", "Cognizant", "Wipro", "Infosys", "Tech Mahindra"],
+        "evaluation_focus": "Basic Quantitative Aptitude, Foundational Coding Syntax, System Support, Communication."
+      }
+    ],
+    "corporate_elimination_sequence": [
+      "The CGPA Gate: Premium product companies mandate a minimum CGPA of 8.5 or 9.0+ with zero active backlogs.",
+      "The Automated Technical Screen: Conducted under proctoring on platforms like HackerRank (tests logical edge-case handling under time limits).",
+      "Technical & System Design Interviews: Face-to-face deep dives into personal tech stacks, full-stack architecture, and stress questioning."
+    ]
+  },
+  "research_and_innovation_hubs": {
+    "infrastructure": "Operates heavy R&D centers focusing on post-graduate, doctoral, and advanced undergraduate research.",
+    "key_centers_of_excellence": [
+      "Center of Excellence in Materials for Advanced Technologies (CeMAT)",
+      "CenTRe for atmOsPheric scIences and Climate studies (TROPIC)",
+      "Centre For Advanced Concrete Research (CACR)",
+      "SRM-BRIN Centre of Excellence in Automation Technologies",
+      "Centre for Analysis of Movement, Ergonomics Research and Animersion",
+      "Nanotechnology Research Center",
+      "Centre For Electric Mobility"
+    ]
+  },
+  "student_sub_culture_and_grassroots_innovation": {
+    "elite_technical_research_teams": {
+      "structure": "Highly autonomous, student-run engineering units operating from dedicated garages.",
+      "recruitment": "Multi-stage recruitment drives involving advanced aptitude tests, design sprints, and high-stress interviews.",
+      "prominent_teams": [
+        {
+          "team_name": "Formula Student Teams (e.g., Camber Racing, 4Front Racing)",
+          "domain": "Automotive Engineering",
+          "operations": "Design, machine, and assemble full-scale open-wheel formula race cars for international tracks. Manage own corporate sponsorships."
+        },
+        {
+          "team_name": "SRM UAV",
+          "domain": "Autonomous Systems & Robotics",
+          "operations": "Design custom carbon-fiber drones, program autonomous flight controllers, and build computer vision pipelines."
+        }
+      ]
+    },
+    "mega_fest_execution_machines": {
+      "structure": "Grassroots operational puzzles executed by structured student councils (Domain Specialists, Joint Secretaries) bypassing normal academic schedules.",
+      "fests": [
+        {
+          "event_name": "Aaruush",
+          "type": "National Techno-Management Fest",
+          "operations": "Coordinates nationwide coding hackathons, robotics challenges, and defense exhibitions. Students manage multi-million rupee budgets and corporate vendor logistics."
+        },
+        {
+          "event_name": "Milan",
+          "type": "National Cultural Fest",
+          "operations": "Four-day event transforming campus logistics, securing safety clearings for international celebrity artists, and managing massive crowd density across multiple open-air theaters."
+        }
+      ]
+    },
+    "international_exposure": {
+      "program": "Semester Abroad Program (SAP)",
+      "function": "Allows high-performing students to spend a semester studying at partner universities (MIT, Stanford, UC Berkeley, Harvard, NUS) and transfer credits back to SRM."
+    }
+  }
+}

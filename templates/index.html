@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SRM Assistant — Ask Anything</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <!-- ── Sidebar ────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">SRM</div>
+      <span class="logo-sub">AI Assistant</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <button class="nav-item active" onclick="clearChat()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+        New Chat
+      </button>
+    </nav>
+
+    <div class="sidebar-topics">
+      <p class="topics-label">Quick Topics</p>
+      <button class="topic-chip" onclick="sendQuick('What are the admission requirements for B.Tech at SRM?')">Admissions</button>
+      <button class="topic-chip" onclick="sendQuick('What are the fee details for engineering courses?')">Fees & Finance</button>
+      <button class="topic-chip" onclick="sendQuick('Tell me about SRM placements and top recruiters')">Placements</button>
+      <button class="topic-chip" onclick="sendQuick('What hostel facilities are available at SRM?')">Hostel & Campus</button>
+      <button class="topic-chip" onclick="sendQuick('What research opportunities are available at SRM?')">Research</button>
+      <button class="topic-chip" onclick="sendQuick('List all B.Tech specializations available at SRM')">Courses</button>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="ollama-badge" id="ollamaBadge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Powered by Ollama</span>
+      </div>
+      <p class="footer-note">Answers are generated from SRM's official content. Always verify critical details at srmist.edu.in.</p>
+    </div>
+  </aside>
+
+  <!-- ── Main chat area ─────────────────────── -->
+  <main class="chat-main">
+
+    <!-- Header bar -->
+    <header class="chat-header">
+      <button class="menu-btn" id="menuBtn" onclick="toggleSidebar()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="header-title">
+        <span>SRM Assistant</span>
+        <span class="header-sub">Kattankulathur Campus</span>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" onclick="clearChat()" title="Clear chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <div class="messages-container" id="messagesContainer">
+
+      <!-- Welcome screen -->
+      <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" stroke="url(#grad1)" stroke-width="2" fill="none" opacity="0.4"/>
+            <circle cx="40" cy="40" r="28" stroke="url(#grad1)" stroke-width="1.5" fill="none" opacity="0.25"/>
+            <path d="M26 40 C26 32 33 26 40 26 C47 26 54 32 54 40 C54 48 47 54 40 54 C36 54 32 52 30 48" stroke="url(#grad1)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="40" cy="40" r="5" fill="url(#grad1)"/>
+            <defs>
+              <linearGradient id="grad1" x1="10" y1="10" x2="70" y2="70">
+                <stop offset="0%" stop-color="#0066CC"/>
+                <stop offset="100%" stop-color="#003d7a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h1 class="welcome-title">Hello, I'm SRM Assistant</h1>
+        <p class="welcome-subtitle">Ask me anything about SRM Institute — admissions, courses, fees, placements, campus life, and more.</p>
+        <div class="welcome-chips">
+          <button class="welcome-chip" onclick="sendQuick('What is the SRMJEEE cutoff for CSE?')">SRMJEEE cutoffs for CSE?</button>
+          <button class="welcome-chip" onclick="sendQuick('What are the top companies that recruit from SRM?')">Top recruiting companies?</button>
+          <button class="welcome-chip" onclick="sendQuick('What facilities are available on the SRM campus?')">Campus facilities?</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Input bar -->
+    <div class="input-area">
+      <div class="input-wrapper">
+        <textarea
+          id="questionInput"
+          class="question-input"
+          placeholder="Ask anything about SRM..."
+          rows="1"
+          onkeydown="handleKeydown(event)"
+          oninput="autoResize(this)"
+        ></textarea>
+        <button class="send-btn" id="sendBtn" onclick="submitQuestion()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+      <p class="input-hint">Press <kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for new line</p>
+    </div>
+
+  </main>
+
+  <!-- Sources drawer -->
+  <div class="sources-drawer" id="sourcesDrawer">
+    <div class="drawer-header">
+      <span>Sources Used</span>
+      <button onclick="closeDrawer()">✕</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>
